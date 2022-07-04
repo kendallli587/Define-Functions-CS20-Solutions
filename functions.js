@@ -56,13 +56,8 @@ function analyzeNumber(n) {
 // Test if username is between 3 and 8 characters, inclusive.
 function validUsername(username) {
     let strLength = username.length;
-    if (strLength >= 3 && strLength <= 8) {
-        return true;
-    } else {
-        return false;
-    }
+    return strLength >= 3 && strLength <= 8;
 
     // Simpler versions
-    // return username.length >= 3 && username.length <= 8;
     // return withinRange(username.length, 3, 8);
 }
